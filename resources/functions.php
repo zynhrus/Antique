@@ -58,14 +58,16 @@ function get_product() {
 
     while ($row = fetch_array($query)) {
 
+       $product_image = display_image($row['product_image']);
+
         // heredoc
 $product = <<<DELIMETER
 
         <a href="preview.php?id={$row['product_id']}">
           <div class="box9">
-            <img src="{$row['product_image']}" style="width: 300px; height: 300px;" />
+            <img src="../resources/uploads/{$product_image}" style="width: 200px; height: 200px;" alt="">
             <p>{$row['product_title']}<br />&#36;{$row['product_price']}</p>
-            
+            <a class="button" target="_blank" href="cart.php?add={$row['product_id']}">Add to Cart</a>
           </div>
         </a>
 
@@ -135,12 +137,14 @@ function get_product_in_cat_page() {
 
     while ($row = fetch_array($query)) {
 
+    $product_image = display_image($row['product_image']);    
+
         // heredoc
 $product = <<<DELIMETER
 
         <a href="preview.php?id={$row['product_id']}">
           <div class="box9">
-            <img src="{$row['product_image']}" style="width: 300px; height: 300px;" />
+            <img src="../resources/uploads/{$product_image}" style="width: 200px; height: 200px;" />
             <p>{$row['product_title']}<br />&#36;{$row['product_price']}</p>
           </div>
         </a>
@@ -174,7 +178,17 @@ function login_user(){
 }
 
 
+/************************ Admin Products Page ********************/
 
+function display_image($picture) {
+
+global $upload_directory;
+
+return $upload_directory  . DS . $picture;
+
+
+
+}
 
 
 

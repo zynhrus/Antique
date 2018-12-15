@@ -22,7 +22,7 @@
 ?>
 
       <div class="box11">
-        <img src="<?php echo $row['product_image']; ?>" style="width: 400px; height: 400px"> 
+        <img class="img-responsive" src="../resources/uploads<?php  echo display_image($row['product_image']); ?>" style="width: 400px; height: 400px" alt="">
       </div>
       <div class="box10">
           <h1><?php echo $row['product_title']; ?></h1>
