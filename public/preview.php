@@ -22,16 +22,27 @@
 ?>
 
       <div class="box11">
-        <img class="img-responsive" src="../resources/uploads<?php  echo display_image($row['product_image']); ?>" style="width: 400px; height: 400px" alt="">
+        <img class="img-responsive" src="../resources/<?php  echo display_image($row['product_image']); ?>" style="width: 400px; height: 400px" alt="">
       </div>
       <div class="box10">
           <h1><?php echo $row['product_title']; ?></h1>
           <h4><?php echo "&#36;" . $row['product_price']; ?></h4>
           <p><?php echo $row['product_description']; ?></p>
           
-          <button class="button">
+          <button class="button" onclick="myFunction()">
           <a style="color: white;">Booking</a>
           </button>   
+
+          <script>
+            function myFunction() {
+              var r = confirm("You Cannot Cancel It");
+              if (r == true) {
+                document.location.href = 'thankyou.php';
+              } else {
+                document.location.href = '#';
+              }
+            }
+            </script>  
 
       </div>
     </div>

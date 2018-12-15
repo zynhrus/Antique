@@ -1,12 +1,9 @@
-
-
-
+<?php add_product(); ?>
 <div class="col-md-12">
 
 <div class="row">
 <h1 class="page-header">
    Add Product
-
 </h1>
 </div>
                
@@ -42,8 +39,8 @@
 
 
 
-    
-    
+
+
 
 </div><!--Main Content-->
 
@@ -55,7 +52,6 @@
 
      
      <div class="form-group">
-       <input type="submit" name="draft" class="btn btn-warning btn-lg" value="Draft">
         <input type="submit" name="publish" class="btn btn-primary btn-lg" value="Publish">
     </div>
 
@@ -64,9 +60,11 @@
 
     <div class="form-group">
          <label for="product-title">Product Category</label>
-          <hr>
-        <select name="product_category" id="" class="form-control">
+
+        <select name="product_category_id" id="" class="form-control">
             <option value="">Select Category</option>
+
+            <?php show_categories_add_product_page(); ?>
            
         </select>
 
@@ -81,22 +79,20 @@
 
 
     <div class="form-group">
-      <label for="product-title">Product Brand</label>
-         <select name="product_brand" id="" class="form-control">
-            <option value="">Select Brand</option>
-         </select>
+      <label for="product-title">Product Quantity</label>
+        <input type="number" name="product_quantity" class="form-control">
     </div>
 
 
 <!-- Product Tags -->
 
 
-    <div class="form-group">
+   <!--  <div class="form-group">
           <label for="product-title">Product Keywords</label>
           <hr>
         <input type="text" name="product_tags" class="form-control">
     </div>
-
+ -->
     <!-- Product Image -->
     <div class="form-group">
         <label for="product-title">Product Image</label>
@@ -111,4 +107,3 @@
 
     
 </form>
-

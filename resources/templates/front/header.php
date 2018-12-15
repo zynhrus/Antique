@@ -12,7 +12,6 @@
         <ul>
           <li><a href="index.php">Home</a></li>
           <li><a href="about.php">About</a></li>
-          <li><a href="checkout.php">Checkout</a></li>
           <li><a href="booking.php"><b>Booking</b></a> </li>
         </ul>
       </div>
