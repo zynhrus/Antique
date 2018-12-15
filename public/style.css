@@ -1,0 +1,330 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+  overflow-x: hidden;
+  transition: background-color .5s;
+}
+
+.center,
+.center-align {
+  text-align: center;
+}
+
+.left {
+  text-align:  !important left;
+}
+
+/*header*/
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  border-bottom: #e0e2d7 2px solid;
+  padding: 1px;
+}
+
+header li {
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header a {
+  color: #000;
+  text-decoration: none;
+  padding: 0 20px 0 20px;
+  text-align: right;
+  font-size: 20px;
+}
+
+header a:hover {
+  color: #010101;
+  font-weight: bold;
+}
+
+.brand-logo {
+  position: all;
+  color: #000;
+  display: inline-block;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 10px;
+  padding: 5px;
+}
+
+header ul {
+  float: right;
+}
+
+/* Boxes */
+.row {
+  float: left;
+  padding: 0 0.75rem;
+  min-height: 1px;
+}
+
+#boxes {
+  margin-top: 20px;
+}
+
+#boxes .box11 {
+  float: left;
+  text-align: left;
+  width: 40%;
+  padding: 10px;
+}
+
+#boxes .box10 {
+  float: left;
+  text-align: left;
+  width: 40%;
+  padding: 10px;
+}
+
+#boxes .box7 {
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+
+#boxes .box2 {
+  float: left;
+  text-align: left;
+  width: 40%;
+  padding: 10px;
+}
+
+#boxes .box3 {
+  float: left;
+  text-align: center;
+  width: 50%;
+  padding: 10px;
+}
+
+#boxes .box4 {
+  float: left;
+  text-align: left;
+  width: 40%;
+  padding: 10px;
+  background-color: #fff;
+  color: #282e34;
+  padding: 24px;
+  border-radius: 2px;
+}
+
+#boxes .box5 {
+  float: right;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+
+#boxes .box6 {
+  float: right;
+  text-align: center;
+  width: 40%;
+  padding: 10px;
+  color: #fff;
+  border-radius: 2px;
+  border: 1px;
+  border-style: solid;
+  border-color: #fff
+}
+
+#boxes .box8 {
+  float: left;
+  text-align: left;
+  width: 20%;
+  padding: 10px;
+}
+
+#boxes .box9 {
+  width: 33%;
+  margin-left: auto;
+  float: left;
+}
+
+#boxes .box12 {
+  width: 65%;
+  float: left;
+}
+
+#boxes .box .box5 img {
+  width: 150px;
+}
+
+.button {
+  color: #eff2e6;
+  text-decoration: none;
+}
+
+.button:hover {
+  color: #eff2e6;
+  font-weight: bold;
+}
+
+/*images*/
+.pimg1,
+.pimg2,
+.pimg3,
+.pimg4 {
+  position: relative;
+  opacity: 0.70;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment: fixed;
+}
+
+.pimg1 {
+  background-image: url('img/01.jpg');
+  min-height: 100%;
+}
+
+.pimg2 {
+  background-image: url('img/03.jpg');
+  min-height: 400px;
+}
+
+.pimg3 {
+  background-image: url('img/02.jpg');
+  min-height: 400px;
+}
+
+.pimg4 {
+  background-image: url('img/01.jpg');
+  min-height: 300px;
+}
+
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.section-light {
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+
+.ptext .border {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+.button {
+  background-color: #B49650;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.border a {
+  text-decoration: none;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #111;
+}
+
+a:hover {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.ptext .border.trans {
+  background-color: transparent;
+}
+
+.trans {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  font-size: 40px;
+}
+
+.ptext .border.end {
+  background-color: #fff;
+  color: #000;
+}
+
+/*about*/
+.box {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 0 0 #e5e5e5;
+  margin: 0 0 2em 0;
+  padding: 3em 2em;
+  overflow-x: hidden;
+}
+
+.box.special {
+  text-align: center;
+}
+
+.container1 {
+  margin: 0 auto;
+  width: 60em;
+}
+
+div.major {
+  padding: 1em 0;
+  text-align: center;
+}
+
+div.major p {
+  display: inline-block;
+  border-top: solid 2px #e5e5e5;
+  color: #777;
+  margin: 1.5em 0 0 0;
+  padding: 1.5em 0 0 0;
+  font-style: normal;
+}
+
+div.major h4 {
+  display: inline-block;
+  border-bottom: solid 2px #e5e5e5;
+  color: #777;
+  font-style: normal;
+}
+
+/*thank you*/
+.thankyou {
+  text-align: center;
+  padding-top: 210px;
+}
